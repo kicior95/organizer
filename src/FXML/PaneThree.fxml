@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.PaneThreeControler">
+   <children>
+      <TabPane layoutX="3.0" layoutY="50.0" prefHeight="248.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="PUSH">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="469.0">
+                     <children>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="450.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="24.0" prefWidth="390.0" spacing="10.0">
+                                 <children>
+                                    <Label lineSpacing="10.0" prefHeight="90.0" prefWidth="90.0" text="Cwiczenie" />
+                                    <Label lineSpacing="10.0" prefHeight="90.0" prefWidth="90.0" text="Serie" />
+                                    <Label lineSpacing="10.0" prefHeight="90.0" prefWidth="90.0" text="Powtórzenia" />
+                                    <Label lineSpacing="10.0" prefHeight="90.0" prefWidth="90.0" text="Ciężar" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="390.0" spacing="10.0">
+                                 <children>
+                                    <Label prefWidth="90.0" text="Przysiad" />
+                                    <TextField fx:id="txtseries1" prefWidth="90.0" promptText="5" />
+                                    <TextField fx:id="txtamount1" prefWidth="90.0" promptText="5" />
+                                    <TextField fx:id="txtweight1" prefWidth="90.0" promptText="100" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="390.0" spacing="10.0">
+                                 <children>
+                                    <Label prefWidth="90.0" text="Wycisnanie leżąc" />
+                                    <TextField fx:id="txtseries2" prefWidth="90.0" promptText="3" />
+                                    <TextField fx:id="txtamount2" prefWidth="90.0" promptText="8" />
+                                    <TextField fx:id="txtweight2" prefWidth="90.0" promptText="70" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="390.0" spacing="10.0">
+                                 <children>
+                                    <Label prefWidth="90.0" text="Wyciskanie stojąc" />
+                                    <TextField fx:id="txtseries3" prefWidth="90.0" promptText="3" />
+                                    <TextField fx:id="txtamount3" prefWidth="90.0" promptText="12" />
+                                    <TextField fx:id="txtweight3" prefWidth="90.0" promptText="40" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Button layoutX="400.0" layoutY="171.0" mnemonicParsing="false" onAction="#addTrainingPUSH" text="Dodaj" />
+                        <Label fx:id="status" layoutX="350.0" layoutY="175.0" prefHeight="20.0" prefWidth="70.0" text="Status" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="PULL">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="450.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="24.0" prefWidth="390.0" spacing="10.0">
+                                 <children>
+                                    <Label lineSpacing="10.0" prefHeight="90.0" prefWidth="90.0" text="Cwiczenie" />
+                                    <Label lineSpacing="10.0" prefHeight="90.0" prefWidth="90.0" text="Serie" />
+                                    <Label lineSpacing="10.0" prefHeight="90.0" prefWidth="90.0" text="Powtórzenia" />
+                                    <Label lineSpacing="10.0" prefHeight="90.0" prefWidth="90.0" text="Ciężar" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="390.0" spacing="10.0">
+                                 <children>
+                                    <Label prefWidth="90.0" text="Martwy" />
+                                    <TextField fx:id="txtseries4" prefWidth="90.0" promptText="5" />
+                                    <TextField fx:id="txtamount4" prefWidth="90.0" promptText="3" />
+                                    <TextField fx:id="txtweight4" prefWidth="90.0" promptText="145" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="390.0" spacing="10.0">
+                                 <children>
+                                    <Label prefWidth="90.0" text="Podciąganie" />
+                                    <TextField fx:id="txtseries5" prefWidth="90.0" promptText="5" />
+                                    <TextField fx:id="txtamount5" prefWidth="90.0" promptText="5" />
+                                    <TextField fx:id="txtweight5" prefWidth="90.0" promptText="70" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="390.0" spacing="10.0">
+                                 <children>
+                                    <Label prefWidth="90.0" text="Wiosłowanie" />
+                                    <TextField fx:id="txtseries6" prefWidth="90.0" promptText="3" />
+                                    <TextField fx:id="txtamount6" prefWidth="90.0" promptText="8" />
+                                    <TextField fx:id="txtweight6" prefWidth="90.0" promptText="60" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Button layoutX="400.0" layoutY="171.0" mnemonicParsing="false" onAction="#addTrainingPULL" text="Dodaj" />
+                        <Label fx:id="status2" layoutX="350.0" layoutY="175.0" prefHeight="20.0" prefWidth="70.0" text="Status" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="10.0" layoutY="10.0" text="Plan Treningowy">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

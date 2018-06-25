@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.PaneTwoControler">
+   <children>
+      <TableView fx:id="tabela" layoutX="108.0" layoutY="90.0" prefHeight="187.0" prefWidth="336.0">
+        <columns>
+          <TableColumn fx:id="day" prefWidth="40.0" text="Dzień" />
+          <TableColumn fx:id="mounth" prefWidth="57.0" text="Miesiąc" />
+            <TableColumn fx:id="type" prefWidth="53.0" text="Partia" />
+            <TableColumn fx:id="name" prefWidth="75.0" text="Cwiczenie" />
+            <TableColumn fx:id="series" prefWidth="39.0" text="Serie" />
+            <TableColumn fx:id="amount" prefWidth="30.0" text="L.p" />
+            <TableColumn fx:id="weight" prefWidth="42.0" text="Ciężar" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="choosetype" layoutX="22.0" layoutY="138.0" onAction="#chooseType" prefHeight="25.0" prefWidth="80.0" />
+      <ComboBox fx:id="chooseworkout" layoutX="23.0" layoutY="193.0" onAction="#chooseWorkout" prefHeight="25.0" prefWidth="80.0" />
+      <Label layoutX="47.0" layoutY="122.0" text="Partia" />
+      <Label layoutX="36.0" layoutY="176.0" text="Ćwiczenie" />
+      <Label layoutX="10.0" layoutY="10.0" text="Historia Treningowa">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="25.0" layoutY="240.0" mnemonicParsing="false" onAction="#deleteTrening" text="Usuń" />
+      <DatePicker fx:id="date" layoutX="329.0" layoutY="56.0" onAction="#chooseDate" prefHeight="25.0" prefWidth="115.0" />
+   </children>
+</AnchorPane>
