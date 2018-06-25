@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="ekranLogowania" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.LoginControler">
+   <children>
+      <VBox layoutX="97.0" layoutY="52.0" prefHeight="240.0" prefWidth="286.0">
+         <children>
+            <Label prefHeight="86.0" prefWidth="286.0" text="Ekran Logowania">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="26.0" prefWidth="286.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="125.0" text="Nazwa " />
+                  <TextField fx:id="txtusername" promptText="test" text="Test" />
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="286.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="125.0" text="Hasło" />
+                  <TextField fx:id="txtpassword" promptText="test" text="test" />
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="70.0" prefWidth="286.0">
+               <children>
+                  <Button layoutX="208.0" layoutY="2.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
